@@ -15,36 +15,125 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/arcade-classic" rel="stylesheet">
 
 </head>
 
 <body>
-  <header>
-  <nav class ="navbar navbar-expand-lg navbar-dark shadow"> 
-<div class ="container-fluid">
-    <a class ="navbar-brand" href="/">
-        <span class="material-icons-outlined">person_pin</span>
-        Joeshua
-    </a>
-</div>
+  
+  <nav class ="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:#28044d"> 
+    <div class ="container-fluid">
+        <a class ="navbar-brand" href="/">
+            <span class="material-icons">person_pin</span>
+            Joeshua
+        </a>
+        <button 
+        type="button"
+        class="navbar-toggler" 
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-lable="Toggle navigation"
+        >
+        <span class ="navbar-toggler-icon"></span>
+        </button>
+            <div class="container px-3">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <li class="nav-item">
+                            <a class ="nav-link me-lg-3" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class ="nav-link me-lg-3" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class ="nav-link me-lg-3" href="#hobbies">Hobbies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class ="nav-link me-lg-3" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>        
+            </div>
+    </div>
   </nav>
-  </header>
-  <main>
- <!-- main banner -->
- <section class="bgimage" id="home">
+  <header id ="home" class ="bg-image bg-dark py-5 img-fluid">
     <div class="container-fluid">
-        <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-            <h2 class="hero_title">Hi, it's me Brad</h2>
-            <p class="hero_desc">I am a professional freelancer in New York City</p>
-        </div>
+    <div class="container px-5">
+        <div class="row align-items-center">
+            <div class="col-lg-8 col-xl-7 col-xxl-6">
+                <div class="my-5">
+                    <h2 class ="text-light fw-bold mb-2"> Hi, I am Joeshua! </h2>
+                    <h2 class ="text-light fw-bold mb-2"> a website development student</h2>
+                    <p class="lead text-light mb-4">
+                        Here you can find anything related to me! Ranging from my projects, personal hobbies, contact information and many more!
+                    </p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-right">
+                        <a class ="btn btn-light btn-large text-uppercase" href="#projects">Explore</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-xl-5 col-xxl-6 justify-content-center">
+                <img class ="img-fluid my-5 rounded-circle" src="images/finalprofilepic.png" alt ="profle">
+            </div>
         </div>
     </div>
+    </div>
+  </header>
+<main>
+<section id="projects" class="text-center py-5">
+    <div class="container project-section">
+        <div class="row justify-content-center">
+            <img class="img-fluid pacman-gif" src="images/pacman.gif"> 
+            <h2 class="fw-bold text-light">Projects</h2>
+            <p class="lead text-light mb-4">
+                Here are the compilation of the projects I did! 
+            </p>
+        </div>
+    </div>
+        <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active c-item ">
+                <img src="images/edge.jpg" class="d-block w-100 c-img" alt="...">
+              </div>
+              <div class="carousel-item c-item">
+                <img src="images/arcade.jpg" class="d-block w-100 c-img" alt="...">
+              </div>
+              <div class="carousel-item c-item">
+                <img src="images/retro.jpg" class="d-block w-100 c-img" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 </section>
-  </main>
-  <footer>
-    <!-- place footer here -->
-  </footer>
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
