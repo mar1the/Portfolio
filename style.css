@@ -70,8 +70,9 @@ body {
 
 .art-img{
     display: block;
-    width: 100%;
+    max-width: 100%;
     padding-bottom: 20px;
+    
 }
 
 .overlay {
@@ -102,4 +103,35 @@ body {
 
 .img-container:hover .overly {
     opacity: 1;
+}
+.art-image{
+    height:100%;
+    background: url('images/artbg.jpg');
+    background-blend-mode: darken;
+    background-size:cover;
+    position:relative;
+    opacity: 100%;
+}
+
+.social{
+    max-width: 100%;
+    padding-left:0;
+    padding-right: 0
+   
+}
+
+.social-icon{
+   padding-bottom: 50px;
+   padding-top: 50px;
+}
+
+.arcade-gif{
+    margin-top: 100px;
+}
+.arcade-pic{
+   max-width: 900px;
+}
+
+.art-bg{
+    background-image: linear-gradient(#bf0047, black 100%);
 }
