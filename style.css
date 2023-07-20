@@ -20,6 +20,7 @@ body {
     background-size:cover;
     position:relative;
     opacity: 100%;
+    z-index: -1;
 }
 
 .c-item {
