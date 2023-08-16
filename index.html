@@ -22,7 +22,7 @@
 
 <body>
   
-  <nav class ="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:#28044d"> 
+  <nav  class ="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:#28044d"> 
     <div class ="container-fluid">
         <a target="_blank" class ="navbar-brand" href="https://twitter.com/aymkinon">
             <span class="material-icons">person_pin</span>
@@ -98,25 +98,33 @@
             </p>
         </div>
     </div>
-        <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div id="projectCarousel" class="carousel slide carousel-container" data-bs-ride="carousel">
           <div class="carousel-indicators">
           <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
           <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
          </div>
           <div class="carousel-inner">
               <div class="carousel-item active c-item ">
-                <img src="images/hydrometertitle.png" class="d-block w-100 c-img" alt="...">
-              </div>
-              <div class="carousel-item c-item">
                 <img src="images/1.png" class="d-block w-100 c-img" alt="...">
               </div>
               <div class="carousel-item c-item">
-                <img src="images/hydrofeature.png" class="d-block w-100 c-img" alt="...">
+                <img src="images/2.png" class="d-block w-100 c-img" alt="...">
               </div>
               <div class="carousel-item c-item">
-                <img src="images/2.png" class="d-block w-100 c-img" alt="...">
+                <img src="images/3.png" class="d-block w-100 c-img" alt="...">
+              </div>
+              <div class="carousel-item c-item">
+                <img src="images/4.png" class="d-block w-100 c-img" alt="...">
+              </div>
+              <div class="carousel-item c-item">
+                <img src="images/5.png" class="d-block w-100 c-img" alt="...">
+              </div>
+              <div class="carousel-item c-item">
+                <img src="images/6.png" class="d-block w-100 c-img" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
@@ -262,24 +270,30 @@
         <div class="col social-icon">
           <a  target="_blank" href="https://myanimelist.net/profile/Hiyuuki"> <img src="images/mal.png" class="social"></a>
           </div>
-          <div class="col social-icon">
-            <a  target="_blank" href="mailto:juswamarit@gmail.com">  <img src="images/gmail.png" class="social"></a>
-          </div>
+          
           <div class="col social-icon">
           </div>
+          <div class ="row contact-container">
+            <p class="lead text-light mb-5 contact-text" >
+              Talk to me about anything! Particularly on topics that matter to me the most!
+            </p>
+          </div> 
+          <div class="container-form">
+            <form action="https://formspree.io/f/xpzgpnyg" method="POST">
+                <h3>Send me a message! </h3>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="text" name="phone" placeholder="Phone Number" required>
+                <textarea name="message" rows="4" placeholder="Message Here!"></textarea>
+                <button type ="submit">Send</button>
+            </form>
+        </div>
         
     </div>
-    <div class ="row contact-container">
-      <p class="lead text-light mb-5">
-        Talk to me about anything! Particularly on topics that matter to me the most!
-      </p>
-    </div> 
-  </div>
+    
   </div>
 
-
-
-
+  
 </section>
 </footer>
 
@@ -305,6 +319,7 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
   <script src="script.js"></script>
+  
 </body>
 
 </html>
