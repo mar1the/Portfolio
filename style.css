@@ -145,7 +145,7 @@ body {
     justify-content: center;
 }
 
-form{
+.form{
     background: #28044d;
     display: flex;
     flex-direction: column;
@@ -155,13 +155,13 @@ form{
     border-radius: 20px;
 }
 
-form h3{
+.h3-form{
     color: #fac505;
     font-weight: 800;
     margin-bottom: 20px;
 }
 
-form input, form textarea{
+.input-form{
     border:0;
     margin: 10px 0;
     padding: 20px;
@@ -170,8 +170,7 @@ form input, form textarea{
     border-radius: 10px;
 
 }
-
-form button {
+.button-form {
     padding: 15px;
     background: #fac505;
     color: #fff;
